@@ -1,0 +1,19 @@
+<script type="text/discourse-plugin" version="0.11.0">
+var pv = 0;
+api.onPageChange((url, title) => {
+  pv++;
+  const parentDOM = document.getElementById("sticky-footer");
+  if (parentDOM) {
+    const adWrappers = parentDOM.getElementsByClassName("ad-wrapper");
+    if (adWrappers) {
+      for (let i = 0; i < adWrappers.length; ++i) {
+        if (pv % adWrappers.length == i) {
+          adWrappers[i].style.display = 'block';
+        } else {
+          adWrappers[i].style.display = 'none';
+        }
+      }
+    }
+  }
+});
+</script>

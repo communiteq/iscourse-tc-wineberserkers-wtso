@@ -1,0 +1,32 @@
+body:not(.staff):not(.primary-group-berserkerbusiness):not(.primary-group-grand_cru_cru):not(.primary-group-monopole_cru) {
+    #sticky-footer {
+        position: fixed;
+        bottom: 0;
+        height: 90px;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999;
+        .ad-wrapper {
+            width: 728px;
+            height: 90px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    #main {
+        margin-bottom: 90px;
+    }
+}
+
+
+body:not(.staff):not(.primary-group-berserkerbusiness):not(.primary-group-grand_cru_cru):not(.primary-group-monopole_cru):not(.ios-safari-composer-hacks)  {
+    #reply-control.open {
+       margin-bottom: 90px; 
+    }
+}
+body.staff, body.primary-group-berserkerbusiness, body.primary-group-grand_cru_cru, body.primary-group-monopole_cru {
+    #sticky-footer { 
+        display: none;
+    }
+}

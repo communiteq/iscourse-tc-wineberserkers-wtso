@@ -1,0 +1,35 @@
+body:not(.staff):not(.primary-group-berserkerbusiness):not(.primary-group-grand_cru_cru):not(.primary-group-monopole_cru) {
+    #topic-progress-wrapper {
+        margin-bottom: 100px;
+    }
+    #main {
+        margin-bottom: 100px;
+    }
+    #sticky-footer {
+        height: 100px;
+        .ad-wrapper {
+            height: 100px;
+            width: 320px;
+            margin: 0 auto;
+        }
+    }
+}
+#sticky-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.composer-open {
+    #sticky-footer {
+        display: none;
+    }
+    #topic-progress-wrapper {
+        margin-bottom: 0px;
+    }
+    #main {
+        margin-bottom: 0px;
+    }
+    #reply-control.open {
+       margin-bottom: 0px !important;
+    }
+}
